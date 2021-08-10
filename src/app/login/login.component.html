@@ -1,0 +1,23 @@
+<form class="form" [formGroup]="loginForm">
+    <div class="container">
+      <div>
+        <label for="uname"><b>Username </b></label>
+        <input type="text" placeholder="Enter Username" formControlName="uname">
+        <mat-error class = "validation" *ngIf="loginForm.invalid">* Username is required</mat-error>
+      </div>
+      <div>
+        <label for="psw"><b>Password </b></label>
+        <input type="password" placeholder="Enter Password" formControlName="psw">
+        <mat-error class = "validation" *ngIf="loginForm.invalid">* Password is required</mat-error>
+      </div>
+      <button type="submit" (click)="submitForm()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f79b9b">
+      <button type="button" (click)="resetForm()" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>

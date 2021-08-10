@@ -1,0 +1,33 @@
+<div class="navbar">
+    <span class="link" routerLink="/add-cust" routerLinkActive="active">Add Customer</span>
+    <span class="link" routerLink="/view-cust" routerLinkActive="active">View Customer</span>
+    <span class="link" routerLink="/" routerLinkActive="active">Logout</span>
+    <span class="user">current user: Suresh</span>
+</div>
+
+<form class="form" [formGroup]="customerForm" novalidate>
+    <div>
+        <mat-form-field>
+            <label class="label" for="custName"><b>Name</b></label>
+            <input class="field" type="text" placeholder="Enter Name" formControlName="name">
+            <mat-error class="fieldValidation" *ngIf="customerForm.invalid">* Name is required</mat-error>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <label class="label" for="mobile"><b>Mobile Number</b></label>
+            <input class="field" type="number" placeholder="Enter Mobile Number" formControlName="mobile">
+            <mat-error class="fieldValidation" *ngIf="customerForm.invalid">* Mobile Number is required</mat-error>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <label class="label" for="email"><b>Email ID</b></label>
+            <input class="field" type="text" placeholder="Enter Email ID" formControlName="email" email>
+            <mat-error class="fieldValidation" *ngIf="customerForm.invalid">* Email is required</mat-error>
+        </mat-form-field>
+    </div>
+
+    <button class="submitbutton" [disabled]="!customerForm.valid" (click)="formSubmit()">Submit</button>
+    <button class="resetbutton" (click)="onReset()">Reset</button>
+</form>

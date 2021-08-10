@@ -1,0 +1,97 @@
+.navbar{
+    background-color: rgb(170, 7, 102);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.link{
+    color: white;
+    padding-left: 50px;  
+    padding-right: 50px; 
+}
+
+.table, .tr, .td{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lblBold {
+    font-weight: bold;
+  }
+
+.table{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.btnbutton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color:green;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.norows{
+    margin-left: 50px;
+}
+
+
+.submitbutton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    background-color:green;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.resetbutton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color:red;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.label{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+.form{
+    margin-top: 20px;
+    margin-left: 500px;
+
+}
+
+.fieldValidation{
+    color: red;
+    margin-left: 25px;
+}
+
+.user{
+    margin-left: 500px;
+    color: white;
+}
